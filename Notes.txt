@@ -1,0 +1,70 @@
+>>>>>What is nodeJS?<<<<<
+
+An enviromnent to run javascript outside the browser. Which is 
+built on Chrome`s V8 JS engine, in 2009.
+Ryan Dahl created it on the top of chrome`s V8 engine.
+
+-Big Community
+-Full Stack
+
+Both front-end and back-end are built in the same language, JS.
+
+GLOBALS - No window
+__dirname = path to the current directory.
+__filename = file name
+require = funtion to use modules (CommonJs)
+module = information about current modele (file)
+process = information about enviromnent where the program is being executed.
+
+>>>>>Modules<<<<<
+Parts or files of an app, since spliting up the code into short
+ease up the life. otherwise, the whole code in a signle file can
+create trouble.
+Helps in complexities as in complex applications, modules become
+self explanatory, why they`re important. And accessible from different files.
+Helps on providing more structure to the application and smaller files.
+Every file is a module by default.
+for exporting a module from one file to another:
+>>module.exports = { } "objects inside the braces".
+>>module.exports = functionName "for a fucntion to be exported".
+>>Importing a module also invokes it and a code doesnt get imported on its own.
+>>* node wraps it in the function.
+
+>>>>>Built-in Modules<<<<<
+>os
+>path
+>fs
+>http
+
+We dont have to specify the path from the files for built-in modules.
+as we did in earlier like: require('./6-alternate) etc. 
+here we`re good to go with:
+
+>>>  const os = require('os') 
+>>>  const user = os.userInfo()
+>>>  console.log(user)
+>>>  {
+  uid: -1,
+  gid: -1,
+  username: 'Asad LIAQAT',
+  homedir: 'C:\\Users\\Asad LIAQAT',
+  shell: null
+}
+
+>>File System, fs-module
+has to types:
+..synchronous - blocking
+..asynchronous - nonblocking
+
+>>>>NPM Commands<<<<
+> npm --version
+> local dependency - used for particular project
+> npm i <packageName>
+
+>global dependency - used for any project
+> npm install -g <packageName>
+
+>>>Package.json
+> manifest file that stores important information about the project
+> npm init (step by step, press enter to skip)
+> npm init -y (default values)
